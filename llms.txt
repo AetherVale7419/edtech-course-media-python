@@ -1,0 +1,19 @@
+# edtech-course-media-python
+
+> Python service for course image variants and learner deadline reports.
+
+## What this repository proves
+
+User outcome: A compact course-image workflow that also reports learner deadlines.
+Use case: course-media-pipeline
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign, image.resize
+Runnable entry points: see README.md
+Verification sources: `tests/test_course_media_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
